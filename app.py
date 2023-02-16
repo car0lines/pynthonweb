@@ -12,7 +12,7 @@ app.config.from_object(__name__)
 USERNAME = 'admin'
 PASSWORD = 'admin'
 
-def concecta_bd():
+def conectar_bd():
     return sqlite3.connect(DATABASE)
 
 @app.before_request
